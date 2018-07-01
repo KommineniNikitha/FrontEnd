@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> coding challenge-2</title>
+</head>
+<body>
+  <h1>coding challenge-3</h1>
+  <script>
+  //step-1
+/*  var years=[1992,1962,2008,2000,1986];
+  //step-2
+  var ages=[];.0
+//step-3
+  //var ages=[26, 56, 10, 18, 32]
+  for(var i=0; i<years.length; i++)
+  {
+    ages[i]=2018-years[i];
+  }
+console.log(ages);
+//ste-4
+var i=0;
+while(i<ages.length)
+{
+  if(ages[i]>=18)
+  {
+    console.log("person is above 18. His age is" +ages[i]);
+  }  else{
+    console.log("person age is below 18. His age is" +ages[i]);
+  }
+    i++;
+}*/
+//step-5
+
+function printFullAge(years){
+
+  var ages=[];
+  var fullAges=[];
+  for(var i=0; i<years.length; i++)
+  {
+    ages[i]=2018-years[i];
+  }
+  var i=0;
+  while(i<ages.length)
+  {
+    if(ages[i]>=18)
+    {
+      console.log("person is above 18. His age is" +ages[i]);
+      fullAges.push(true);
+    }  else{
+      console.log("person age is below 18. His age is" +ages[i]);
+        fullAges.push(false);
+    }
+      i++;
+  }
+return fullAges;
+}
+  var years=[1992,1962,2008,2000,1986];
+var full_1=printFullAge(years);
+var full_2=printFullAge([2010,1915,1950]);
+
+  </script>
+
+</body>
+</html>

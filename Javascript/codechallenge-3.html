@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>coding challenge-3</title>
+</head>
+<body>
+  <h1>Solving coding challenge-3</h1>
+  <script>
+  var bills=[124,48,268];
+  var TotaltipArray=[];
+  var totalbillArray=[];
+  //This function calculates tip by taking bill amount as input
+  function tipCalculator(billamount){
+    var tip;
+    if(bills[i]<50)
+    {
+       tip=bills[i]*0.2;
+    }
+    else if(bills[i]>=50 && bills[i]<200)
+    {
+       tip=bills[i]*(15/100);
+    }
+    else if(bills[i]>=200)
+     {
+       tip=bills[i]*0.1;
+    }
+  return tip;
+  }
+
+
+  for(var i=0;i<3;i++)
+  {
+    var totaltip=tipCalculator(bills[i]);
+    var totalBill=bills[i]+totaltip;
+    TotaltipArray.push(totaltip);
+    totalbillArray.push(totalBill);
+  }
+  console.log(TotaltipArray);
+  console.log(totalbillArray);
+//Js course coding
+function tipCalculator(bills){
+  var percentage;
+  if(bills<50)
+  {
+    percentage=0.2;
+  }
+  else if(bills>=50 && bills<200){
+    percentage=0.15;
+  }
+  else{
+    percentage=0.1;
+  }
+  return percentage*bills;
+}
+var bills=[124,48,268];
+var tips=[tipCalculator(bills[0]), tipCalculator(bills[1]), tipCalculator(bills[2])];
+console.log(tips);
+var totalbill=[bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2] ];
+console.log(totalbill);
+
+
+// if(bills[i]<50)
+// {
+//   var totaltip=bills[i]*0.2;
+//   var totalBill=bills[i]+totaltip;
+//   TotaltipArray.push(totaltip);
+//   totalbillArray.push(totalBill);
+//   console.log("Total bill is lessthan 50 the amount is" +totalBill);
+// }
+// else if(bills[i]>=50 && bills[i]<200)
+// {
+//   var totaltip=bills[i]*(15/100);
+//   var totalBill=bills[i]+totaltip;
+//   TotaltipArray.push(totaltip);
+//   totalbillArray.push(totalBill);
+//   console.log("Total bill is between 50 and 200 the amount is" +totalBill);
+// }
+// else if(bills[i]>=200)
+//  {
+//    var totaltip=bills[i]*0.1;
+//    var totalBill=bills[i]+totaltip;
+//    TotaltipArray.push(totaltip);
+//    totalbillArray.push(totalBill);
+//   console.log("Total bill is greaterthan 200 the amount is" +totalBill);
+// }
+
+
+  </script>
+</body>
+</html>

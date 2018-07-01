@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javscript coding</title>
+</head>
+<body>
+  <h1>Coding challenge</h1>
+  <script>
+  var jHeight=295;
+  var jAge=26;
+  var sHeight=295;
+  var sAge=26;
+  var pHeight=295;
+  var pAge=26;
+  var johnScore=jHeight+(5*jAge);
+  var smithScore=sHeight+(5*sAge);
+  var puppyScore=pHeight+(5*pAge);
+  /*if(smithScore > johnScore)
+  {
+    console.log("the heighest score of smith is:" +smithScore);
+  }
+  else if(smithScore === johnScore)
+  {
+    console.log("both scores are equal:" +johnScore);
+  }
+  else {
+    console.log("the heighest score of john is:" +johnScore);
+  }*/
+
+if(johnScore>smithScore && johnScore > puppyScore)
+{
+  console.log("the heighest score of john is:" +johnScore);
+}
+else if(smithScore> puppyScore && smithScore> johnScore)
+{
+  console.log("the heighest score of smith is:" +smithScore);
+}
+else if(puppyScore>johnScore && puppyScore>smithScore)
+{
+    console.log("the heigest score of puppy is:" +puppyScore);
+}
+else{
+  console.log("game is draw");
+}
+
+  /*if(smithScore>puppyScore)
+  {
+    console.log("the heighest score of smith is:" +smithScore);
+  }
+  else if(smithScore > johnScore && smithScore < puppyScore)
+  {
+    console.log("the heigest score of puppy is:" +puppyScore);
+  }
+else{
+  console.log("the heighest score of john is:" +johnScore)
+}*/
+  </script>
+</body>
+</html>

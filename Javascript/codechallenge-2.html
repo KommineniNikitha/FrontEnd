@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>coding challenge-2</title>
+</head>
+<body>
+  <h1>coding challenge-2</h1>
+  <script>
+//John team scores
+  var jMatch1=89;
+  var jMatch2=160;
+  var jMatch3=103;
+  //Mike team scores
+  var mMatch1=89;
+  var mMatch2=190;
+  var mMatch3=103;
+
+  var jAvgScore=(jMatch1+jMatch2+jMatch3)/3;
+  var mAvgScore=(mMatch1+mMatch2+mMatch3)/3;
+console.log(jAvgScore);
+console.log(mAvgScore);
+//for two players
+/*
+if(jAvgScore>mAvgScore)
+{
+  console.log("winner of the match is:John and His heighest average score is:" + jAvgScore);
+}
+else if(jAvgScore===mAvgScore){
+  console.log("Both teams score is equal" +jAvgScore);
+}
+else
+{
+  console.log("winner of the match is:mike and His heighest average score is:" +mAvgScore);
+}
+*/
+//Mary team scores
+var maryMatch1=89;
+var maryMatch2=120;
+var maryMatch3=103;
+var maryAvgScore=(maryMatch1+maryMatch2+maryMatch3)/3;
+console.log(maryAvgScore);
+
+if(jAvgScore>mAvgScore && jAvgScore> maryAvgScore){
+  console.log("winner of the match is:John and His heighest average score is:" + jAvgScore);
+}
+else if(mAvgScore>maryAvgScore && mAvgScore>jAvgScore)
+  {
+  console.log("winner of the match is:mike and His heighest average score is:" +mAvgScore);
+  }
+  else if(maryAvgScore>jAvgScore && maryAvgScore>mAvgScore)
+  {
+  console.log("winner of the match is:mary and her heighest average score is:" +maryAvgScore);
+}
+else {
+  console.log("there is a draw:" +jAvgScore);
+}
+
+  </script>
+</body>
+</html>

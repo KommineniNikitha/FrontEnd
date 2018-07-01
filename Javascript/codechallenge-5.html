@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>coding challenge-5</title>
+</head>
+
+<body>
+  <h1>solving intresting challenge</h1>
+  <script>
+    //below code created for john
+    var tipArray = [];
+    var billArray = [];
+    var john = {
+      name: 'John',
+      bills: [124, 48, 268, 180, 42],
+      calcTip: function() {
+
+        for (var i = 0; i < 5; i++) {
+          var tip;
+          if (john.bills[i] < 50) {
+            tip = john.bills[i] * 0.2;
+          } else if (john.bills[i] >= 50 && john.bills[i] < 200) {
+            tip = john.bills[i] * 0.15;
+          } else if (john.bills[i] > 200) {
+            tip = john.bills[i] * 0.1;
+          }
+          var eachtip = tip;
+          tipArray.push(eachtip);
+          var Bill = john.bills[i] + tip;
+          billArray.push(Bill);
+        }
+        return tip;
+      }
+    };
+    john.calcTip();
+    console.log(tipArray);
+    console.log(billArray);
+
+    //below code is for mark
+    var bills = [77, 375, 110, 45];
+    var markArray = [];
+    for (var i = 0; i < 4; i++) {
+      if (bills[i] < 100) {
+        tip = bills[i] * 0.2;
+      } else if (bills[i] >= 100 && bills[i] < 300) {
+        tip = bills[i] * 0.1;
+      } else if (bills[i] > 300) {
+        tip = bills[i] * 0.25;
+      }
+      var totaltips = tip;
+      markArray.push(totaltips);
+    }
+    console.log(markArray);
+
+    function calcAvg(tip) {
+      var marksum = 0;
+      var johnsum = 0;
+      for (var i = 0; i < bills.length; i++) {
+        marksum = marksum + markArray[i];
+        johnsum = johnsum + tipArray[i];
+      }
+      var markavg = marksum / bills.length;
+      var johnavg = johnsum / bills.length;
+      if (markavg > johnavg) {
+        console.log("Mark has the heighest given tip");
+      } else if (markavg = johnavg) {
+        console.log("both averages are equal");
+      } else {
+        console.log("john has the heighest given tip");
+      }
+    }
+    calcAvg();
+  </script>
+</body>
+
+</html>

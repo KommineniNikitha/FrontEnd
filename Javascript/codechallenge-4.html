@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>coding challenge-4</title>
+</head>
+<body>
+  <h1>solving coding challenge-4</h1>
+  <script>
+  var mark={
+    fullName:'Mark',
+    mass:87,
+    height:5.4,
+    calcMBMI:function (){
+      var BMI=this.mass/(this.height*this.height);
+      return BMI;
+    }
+  };
+  var MarkBMI=mark.calcMBMI();
+ console.log(MarkBMI);
+
+  var john={
+    fullName:'John',
+    mass:87,
+    height:5.4,
+    calcJBMI:function(){
+      var BMI=this.mass/(this.height*this.height);
+      return BMI;
+    }
+  };
+var johnBMI=john.calcJBMI();
+console.log(johnBMI);
+if(MarkBMI>johnBMI)
+{
+  console.log(mark.fullName+ " " +"has the heigest BMI and his BMI is:"  +MarkBMI);
+}
+else if(MarkBMI===johnBMI)
+{
+  console.log("both of them BMI\'s are equal");
+}
+else{
+  console.log(john.fullName+ " " +"has the heigest BMI and his BMI is:" +johnBMI);
+}
+  </script>
+</body>
+</html>
