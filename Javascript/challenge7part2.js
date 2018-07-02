@@ -15,11 +15,15 @@ Question.prototype.displayQuestion=function()
   console.log(i+ ':' +this.choices[i]);
   }
 }
+
+  var count=0;
+
 Question.prototype.displayanswer=function(ans){
 
 if(ans=== this.answer) {
 console.log("correct answer");
-//console.log("The current score is:" +increment);
+console.log("The current score is:" +count);
+count++;
 }
 else{
 console.log("wrong answer try again:");

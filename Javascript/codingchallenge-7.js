@@ -23,12 +23,3 @@ Question.prototype.displayQuestion = function() {
   }
 }
 storearray[selectques].displayQuestion();
-
-
-/*
-storearray.push(ques1,ques2,ques3);
-console.log(storearray);
-//function quesobj()
-  selectques=Math.floor(Math.random()*2)+1;
-  console.log(storearray[selectques]);
-*/
